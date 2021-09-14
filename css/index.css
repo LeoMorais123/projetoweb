@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Voltaire&display=swap');
+
+body{
+    /*flex-grow: 1;*/
+    font-family: 'Voltaire', sans-serif;
+    background-color: white;
+    padding: 0px;
+    margin: 0px;
+}
+
+
+/*LOGO ABAIXO*/
+#logo{
+    background-color: black;
+    display: flex;
+}
+
+#logo{
+    width: auto;
+    display: flex;
+}
+
+.logo_menu .my_menu{
+    display: flex;
+}
+
+/*LOGO ACIMA*/
+
+
+/*MENU ABAIXO*/
+.menu{
+    overflow: hidden;
+    background-color: black;
+    border: none;
+}
+
+.menu a{
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.menu a:hover{
+    transition: 0.5s;
+    background-color: #333333;
+}
+
+.menu .menu_btt{
+    display: none;
+}
+
+/*@media screen and (min-width: 2999px){
+    #fundo{
+        display: none;
+    }
+}*/
+
+@media screen and (max-width: 600px){
+
+    #fundo{
+        display: none;
+    }
+
+    .menu a{
+        display: none;
+    }
+
+    .menu .menu_btt{
+        display: block;
+        float: right;
+    }
+
+    .menu.responsive{
+        position: relative;
+    }
+
+    .menu.responsive a.menu_btt{
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    .menu.responsive a{
+        float: none;
+        display: block;
+        text-align: center;
+    }
+}
+
+
+
+/*MENU ACIMA*/
+
+/*FUNDO E TITULO ABAIXO*/
+
+#fundo, #img{
+    width: 100%;
+}
+
+#titulo{
+    position: absolute;
+    color: white;
+    top: 250px;
+    left: 50px;
+}
+
+#titulo h1{
+    position: relative;
+    font-size: 70px;
+    top: 50px;
+}
+
+#titulo h2{
+    text-align: left;
+    border-bottom: 2px solid white;
+}
+
+#content h2{
+    justify-content: center;
+    font-size: 40px;
+}
+
+#news{
+    text-align: center;
+    font-size: 40px;
+}
+
+/*FUNDO E TITULO ACIMA*/
+
+/*CARROSSEL ABAIXO*/
+
+#news{
+    position: relative;
+}
+
+.container{
+    width: 100%;
+    position: relative;
+    margin: auto;
+}
+
+img{
+    width: 100%;
+}
+
+.prev, .next{
+    cursor: pointer;
+    color: white;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.next{
+    right: 0;
+}
+
+.prev:hover, .next:hover{
+    transition: 0.3s;
+    background-color: black;
+    border-radius: 3px;
+}
+
+.n_text{
+    color: white;
+    background-color: black;
+    font-size: 25px;
+    padding: 8px 16px;
+    position: absolute;
+    top: 85,9px;
+}
+
+.i_text{
+    padding: 10px;
+    font-size: 25px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+
+.i_text_i{
+    text-align: center;
+    font-size: 15px;
+    font-weight: lighter;
+}
+
+.dot{
+    cursor: pointer;
+    width: 15px;
+    height: 15px;
+    margin: 0px 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.active, .dot:hover{
+    transition: 0.3s;
+    background-color: #717171;
+}
+
+.dots_box{
+    text-align: center;
+    margin-top: 20px;
+}
+
+/*Animação: opcional*/
+
+.wall{
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.0s;   
+    animation-name: fade;
+    animation-duration: 1.0s;
+}
+
+@keyframes fade{
+    from{ opacity: 0.3;}
+    to{ opacity: 1;}
+}
+
+@-webkit-keyframes fade{
+    from{ opacity: 0.3;}
+    to { opacity: 1;}
+}
+
+/*FOOTER*/
+
+#footer{
+    font-size:20px;
+    color: white;
+    background-color: black;
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
+}
+
+#f-title{
+    font-size: 40px;
+}
